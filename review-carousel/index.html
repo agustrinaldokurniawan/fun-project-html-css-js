@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Carousel</title>
+    <link rel="stylesheet" href="bulma.min.css" />
+    <script
+      src="https://kit.fontawesome.com/50834fb668.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="reviews" class="container">
+      <h1
+        class="is-size-1 has-text-weight-medium has-text-centered has-text-dark"
+      >
+        Our Reviews
+      </h1>
+      <hr
+        style="width: 70px; margin: auto; height: 5px"
+        class="has-background-primary"
+      />
+      <div class="is-flex is-justify-content-center">
+        <div
+          class="box mt-5"
+          style="width: 400px; height: 450px; position: relative"
+        >
+          <div
+            class="
+              is-flex
+              is-justify-content-center
+              is-align-items-center
+              is-flex-direction-column
+            "
+          >
+            <figure class="image" style="position: relative">
+              <div
+                class="has-background-primary"
+                style="
+                  width: 200px;
+                  height: 200px;
+                  border-radius: 50%;
+                  position: absolute;
+                  right: -10px;
+                  top: -5px;
+                "
+              ></div>
+              <span
+                class="icon has-background-primary p-5 has-text-white"
+                style="position: absolute; z-index: 2; border-radius: 50%"
+              >
+                <i class="fas fa-quote-right"></i>
+              </span>
+              <img
+                class="is-rounded"
+                style="
+                  width: 200px;
+                  height: 200px;
+                  object-fit: cover;
+                  position: relative;
+                "
+                id="image-user"
+                src="http://learnenglish.britishcouncil.org/sites/podcasts/files/2021-10/RS6715_492969113-hig.jpg"
+              />
+            </figure>
+            <h1
+              id="name-user"
+              class="mt-5 is-size-4 has-text-weight-semibold has-text-dark"
+            ></h1>
+            <h3
+              id="job-user"
+              class="has-text-primary has-text-weight-medium"
+            ></h3>
+            <p id="review-user" class="mt-3 has-text-centered"></p>
+            <div
+              class="is-flex mt-3 mb-3"
+              style="position: absolute; bottom: 0"
+            >
+              <button
+                class="button is-white has-text-primary"
+                onclick="getReview('prev')"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button
+                class="button is-white has-text-primary"
+                onclick="getReview('next')"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
