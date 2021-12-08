@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper</title>
+    <link rel="stylesheet" href="bulma.min.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img
+            src="https://i.ibb.co/BLqHY20/TERANG.png"
+            alt="Royal Code"
+          />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    </nav>
+    <section class="hero is-danger is-fullheight" id="hero">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="box">
+            <p class="is-size-3 has-text-weight-bold">
+              Background Color: <p id="color-hex">hsl(348, 100%, 61%)</p>
+            </p>
+          </div>
+          <button class="button is-white" onclick="changeColor()">
+            Click to change color
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
